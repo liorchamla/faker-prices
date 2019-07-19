@@ -1,5 +1,5 @@
 {
-  "name": "liorchamla/faker-price",
+  "name": "liorchamla/faker-prices",
   "description": "Provides typical and credible prices for Faker (fzaninotto/faker) library",
   "type": "library",
   "keywords": [
