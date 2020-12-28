@@ -22,7 +22,7 @@ class Prices extends Base
      * @param float $number
      * @return integer
      */
-    protected function getNearestTenth(float $number) : int
+    protected function getNearestTenth(float $number): int
     {
         return round($number, -1);
     }
@@ -32,7 +32,7 @@ class Prices extends Base
      *
      * @return float
      */
-    protected function getDecimals() : float
+    protected function getDecimals(): float
     {
         return $this->generator->randomElement(self::DECIMALS);
     }
@@ -47,12 +47,12 @@ class Prices extends Base
      * @param boolean $tenths
      * @param boolean $psychologicalPrice
      * @param boolean $decimals
-     * @return float
+     * @return float|int
      */
-    public function price($min = 1000, $max = 20000, $tenths = true, $psychologicalPrice = true, $decimals = true) : float
+    public function price($min = 1000, $max = 20000, $tenths = true, $psychologicalPrice = true, $decimals = true)
     {
         if ($decimals) {
-            $price = $this->generator->randomFloat($min, $max, 2);
+            $price = $this->generator->randomFloat(2, $min, $max);
         } else {
             $price = $this->generator->numberBetween($min, $max);
         }
