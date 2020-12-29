@@ -1,6 +1,6 @@
 {
   "name": "liorchamla/faker-prices",
-  "description": "Provides typical and credible prices for Faker (fzaninotto/faker) library",
+  "description": "Provides typical and credible prices for Faker (fzaninotto/faker or fakerphp/faker) library",
   "type": "library",
   "minimum-stability": "stable",
   "keywords": [
@@ -12,7 +12,7 @@
   "authors": [
     {
       "name": "Lior Chamla",
-      "email": "lchamal@gmail.com"
+      "email": "contact@web-develop.me"
     }
   ],
   "autoload": {
@@ -25,11 +25,9 @@
       "Liior\\Tests\\Faker\\": "tests/Faker"
     }
   },
-  "require": {
-    "fzaninotto/faker": "^1.8"
-  },
   "require-dev": {
     "phpunit/phpunit": "^9",
-    "pestphp/pest": "^0.3.19"
+    "pestphp/pest": "^0.3.19",
+    "fakerphp/faker": "^1.13"
   }
 }

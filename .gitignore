@@ -3,3 +3,4 @@ vendor/
 coverage/
 app/
 index.php
+composer.lock
